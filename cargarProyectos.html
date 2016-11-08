@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+       <title>Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    
+    <body >
+          
+        <!--BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-inverse navbar-fixed-top barra" role="navigation"> 
+      <div class="container">
+        <div class="navbar-header">
+            <img src="img/1e.png" class="logo"/>
+         
+          <a class="navbar-brand" href="#">UDEM PROYECTOS </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+        
+       <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Subir proyecto</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Nombre del proyecto" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Descripción detallada del proyecto" rows="7"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <label>Facultad</label>
+                                        <select class="form-control">
+                                            <option value="0">Facultad de Derecho</option>
+                                            <option value="1">Facultad de Ingeniería</option>
+                                            <option value="2">Facultad de Ciencias Económicas y Administrativas</option>
+                                            <option value="3">Facultad de Comunicación</option>
+                                            <option value="3">Facultad de Diseño</option>
+                                        </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <form method="post" enctype="multipart/form-data">
+                                    <input type="file" id="files" name="files" multiple="multiple" />
+                                </form>
+                            </div>
+                        </div>
+                        
+
+                        
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Subir</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .header {
+        color: #ff0000;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #cc0000;
+    }
+</style>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+    </body>
+</html>
+
+
